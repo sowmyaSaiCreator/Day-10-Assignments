@@ -1,59 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="header"></div>
-      <h1>NEWS DAILY WEEKLY</h1>
-      <div class="row pb-3">
-        <div class="col-5">
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-          <article>Lorem ipsum dolor sit amet consectetur adipisicing</article>
-          <br />
-          <article>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
-            ipsum aspernatur natus vero voluptatum a nostrum in dolores! Odit,
-            exercitationem ullam!
-          </article>
-          <br />
-          <article>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </article>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day-10 Assignments newspaper</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .red {
+      color: rgb(127, 40, 30);
+      padding-top: 10px;
+    }
+
+    .header,
+    .footer {
+      font-weight: bold;
+      margin: 10px;
+    }
+    .footer{
+      border-bottom: 3px solid #A4A6A3;
+
+    }
+    .borderBot {
+      border-bottom: 3px solid #A4A6A3;
+      padding-bottom: 10px;
+    }
+
+    .borderTop {
+      border-top: 3px solid #A4A6A3;
+    }
+
+    .page1 {
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+    }
+
+    .red1 {
+      color: rgb(127, 40, 30);
+    }
+
+    .diagonalBox {
+      position: relative;
+      border-bottom: 30px solid rgb(127, 40, 30);
+      border-right: 15px solid transparent;
+      /* top: 63px; */
+      width: 96px;
+    }
+
+    .diagonalAbsBox {
+      position: absolute;
+      border-bottom: 30px solid rgb(127, 40, 30);
+      border-right: 15px solid transparent;
+      top: -23px;
+      width: 96px;
+    }
+
+    .diagonalBox>span,
+    .diagonalAbsBox>span {
+      position: relative;
+      top: 25px;
+      color: #fff;
+      padding: 5px;
+    }
+
+    .circle {
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #000;
+      position: absolute;
+      right: 30px;
+    }
+
+    .circle>span {
+      position: relative;
+      left: 8px;
+      top: 8px;
+      font-size: 10px;
+      font-style: italic
+    }
+
+    .top170 {
+      top: 170px;
+    }
+
+    .top160 {
+      top: 160px
+    }
+
+    .top340 {
+      top: 340px;
+    }
+
+    .top180 {
+      top: 180px;
+    }
+
+    .top280 {
+      top: 280px;
+    }
+
+    .top220 {
+      top: 220px;
+    }
+
+    .pos {
+      color: #fff;
+      position: absolute;
+      text-align: right;
+      right: 20px;
+      width: 250px;
+    }
+
+    .twr230 {
+      right: 30px;
+      width: 167px;
+      top: 230px;
+
+    }
+
+    .r40 {
+      right: 40px;
+    }
+    .btp{
+      border-top: 3px solid #A4A6A3;
+      border-bottom: 3px solid #A4A6A3;
+      margin:5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container page1">
+    <header class="header row">
+      <div class="col-6">25 Loreum ipsum 1234/56/78</div>
+      <div class="col-6 text-right">Loreum ipsum dolar sit amet</div>
+    </header>
+    <div class="col-12 btp">Lorem ipsum dolor sit amet consectetur adipisicing amet consectetur adipisicing elit.</div>
+    <h1 class="text-center">NEWS DAILY WEEKLY</h1>
+    <div class="row pb-3">
+      <div class="col-4">
+        <div class="diagonalBox">
+          <span>Today 01</span>
         </div>
-        <div class="col-7">
-          <img src="https://via.placeholder.com/700X250" alt="image" />
-        </div>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor
+          sit amet consectetur adipisicing
+        </article>
+        <br />
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+          exercitationem ullam!
+        </article>
+        <br />
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+          dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet
+          consectetur adipisicing
+        </article>
       </div>
-      <div class="row">
-        <div class="col-4">
-          <div>
-            <img src="https://via.placeholder.com/370X250" alt="image" />
-          </div>
+      <div class="col-8">
+        <div class="circle top170"><span>page 23</span></div>
+        <div class="pos top220">
+          Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor
+          sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor
         </div>
-        <div class="col-4">
-          <div>
-            <img src="https://via.placeholder.com/370X250" alt="image" />
-          </div>
-        </div>
-        <div class="col-4">
-          <div>
-            <img src="https://via.placeholder.com/370X250" alt="image" />
-          </div>
-        </div>
+        <img src="https://via.placeholder.com/740X400" alt="image" />
       </div>
-      <div class="footer"></div>
     </div>
-  </body>
+    <div class="row">
+      <div class="col-4">
+        <div class="diagonalAbsBox">
+          <span>25 12 34</span>
+        </div>
+        <div class="circle top160"><span>page 23</span></div>
+
+        <div>
+          <img src="https://via.placeholder.com/370X250" alt="image" />
+        </div>
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor
+          sit amet consectetur adipisicing
+        </article>
+        <br />
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+          exercitationem ullam!
+        </article>
+        <br />
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+          exercitationem ullam!
+        </article>
+      </div>
+      <div class="col-4">
+        <div class="diagonalAbsBox">
+          <span>25 12 34</span>
+        </div>
+        <div class="circle top160"><span>page23</span></div>
+        <div>
+          <img src="https://via.placeholder.com/370X250" alt="image" />
+        </div>
+        <article class="borderBot">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+          exercitationem ullam!
+        </article>
+        <h3 class="text-center red">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat
+        </h3>
+
+      </div>
+      <div class="col-4">
+        <div class="diagonalAbsBox">
+          <span>25 12 34</span>
+        </div>
+        <div class="circle top160"><span>page 23</span></div>
+        <div>
+          <img src="https://via.placeholder.com/370X250" alt="image" />
+        </div>
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor
+          sit amet consectetur adipisicing
+        </article>
+        <br />
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+          exercitationem ullam!
+        </article>
+        <br />
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+          exercitationem ullam!
+        </article>
+      </div>
+    </div>
+    <footer class="footer row">
+      <div class="col-6">25 Loreum ipsum 1234/56/78</div>
+      <div class="col-6 text-right">Loreum ipsum dolar sit amet</div>
+    </footer>
+  </div>
+
+
+  <!--2nd page-->
+  <div class="container">
+    <header class="header row">
+      <div class="col-6">25 Loreum ipsum 1234/56/78</div>
+      <div class="col-6 text-right">Loreum ipsum dolar sit amet</div>
+    </header>
+    <div class="col-12 btp">Lorem ipsum dolor sit amet consectetur adipisicing amet consectetur adipisicing elit.</div>
+    <div class="row borderBot">
+      <div class="col-9">
+        <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur</h3>
+        <div class="row">
+          <div class="col-6">
+            <article>
+              Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor
+              sit amet consectetur adipisicing
+            </article>
+            <br />
+            <article>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+              exercitationem ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+              exercitationem ullam!
+            </article>
+            <br />
+            <article>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+              exercitationem ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+              exercitationem ullam!
+            </article>
+          </div>
+          <div class="col-6">
+            <article>
+              Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor
+              sit amet consectetur adipisicing
+            </article>
+            <br />
+            <article>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+              exercitationem ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+              exercitationem ullam!
+            </article>
+            <br />
+            <article>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+              exercitationem ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+              exercitationem ullam!
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="circle top180"><span>page 23</span></div>
+        <div class="pos twr230">
+          Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor
+          sit amet consectetur adipisicing Lorem ipsum dolor
+          sit amet
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/250X420" alt="image" />
+        </div>
+      </div>
+    </div>
+    <div class="row borderBot">
+      <div>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur</h3>
+      </div>
+      <div class="col-4">
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+          exercitationem ullam! <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+          exercitationem ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+          exercitationem ullam!
+        </article>
+      </div>
+      <div class="col-8">
+        <div class="diagonalAbsBox">
+          <span>25 12 34</span>
+        </div>
+        <div class="circle top180"><span>page 23</span></div>
+        <div>
+          <img src="https://via.placeholder.com/740X260" alt="image" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur</h3>
+      </div>
+      <div class="col-4">
+        <div class="diagonalBox">
+          <span>Today 01</span>
+        </div>
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+          exercitationem ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+          exercitationem ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+          exercitationem ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+          exercitationem ullam!
+        </article>
+      </div>
+      <div class="col-4">
+        <h3 class="text-center red1 borderBot borderTop">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat
+        </h3>
+        <article>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+          exercitationem ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          aliquid, possimus hic dolorum quisquam repellat ut consectetur, ad,
+          exercitationem ullam!
+      </div>
+      <div class="col-4">
+        <div class="circle top180"><span>page 23</span></div>
+        <div class="pos twr230 r40">
+          Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor
+          sit
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/340X360" alt="image" />
+        </div>
+      </div>
+    </div>
+    <footer class="footer row">
+      <div class="col-6">25 Loreum ipsum 1234/56/78</div>
+      <div class="col-6 text-right">Loreum ipsum dolar sit amet</div>
+    </footer>
+  </div>
+
+</body>
+
 </html>
